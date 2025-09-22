@@ -330,6 +330,14 @@ return [
 		'ruleset'   => 'js',
 	],
 	[
+		'title'     => esc_html__( 'Naked Link', 'accessibility-checker' ),
+		'info_url'  => 'https://a11ychecker.com/help/naked-link',
+		'slug'      => 'naked_link',
+		'rule_type' => 'warning',
+		'summary'   => esc_html__( 'A Naked Link warning appears when a link uses the raw URL as its text content. This makes it difficult for screen reader users to understand the purpose of the link, and raw URLs can be long and cumbersome to listen to. To fix this warning, replace the URL text with descriptive text that explains where the link goes or what action it performs.', 'accessibility-checker' ),
+		'ruleset'   => 'js',
+	],
+	[
 		'title'     => esc_html__( 'Underlined Text', 'accessibility-checker' ),
 		'info_url'  => 'https://a11ychecker.com/help1978',
 		'slug'      => 'underlined_text',

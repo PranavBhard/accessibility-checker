@@ -67,6 +67,8 @@ import hasSubheadingsIfLongContent from '../checks/has-subheadings-if-long-conte
 import imageAnimated from '../rules/img-animated';
 import imageAnimatedCheck from '../checks/img-animated-check';
 import alwaysFail from '../checks/always-fail';
+import nakedLink from '../rules/naked-link';
+import nakedLinkCheck from '../checks/naked-link';
 
 // Define all the custom rules to be used.
 export const rulesArray = [
@@ -80,6 +82,7 @@ export const rulesArray = [
 	linkAmbiguousText,
 	linkPDF,
 	linkMsOfficeFile,
+	nakedLink,
 	brokenAnchorLink,
 	labelExtended,
 	missingTableHeader,
@@ -117,6 +120,7 @@ export const checksArray = [
 	textIsJustified,
 	linkTargetBlankWithoutInforming,
 	hasAmbiguousText,
+	nakedLinkCheck,
 	anchorExists,
 	imageInputHasAlt,
 	ariaHiddenValidUsage,

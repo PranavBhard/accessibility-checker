@@ -330,6 +330,14 @@ return [
 		'ruleset'   => 'js',
 	],
 	[
+		'title'     => esc_html__( 'Naked Link', 'accessibility-checker' ),
+		'info_url'  => 'https://a11ychecker.com/help', // Update with actual help URL when available
+		'slug'      => 'naked_link',
+		'rule_type' => 'error',
+		'summary'   => esc_html__( 'A Naked Link error appears when a link\'s visible text is just the raw URL itself (e.g., "https://example.com" instead of descriptive text). This creates accessibility issues because screen readers will read the URL twice - once as the link text and once as the destination. To resolve this error, replace the URL text with meaningful, descriptive text that explains where the link goes or what action it performs.', 'accessibility-checker' ),
+		'ruleset'   => 'js',
+	],
+	[
 		'title'     => esc_html__( 'Underlined Text', 'accessibility-checker' ),
 		'info_url'  => 'https://a11ychecker.com/help1978',
 		'slug'      => 'underlined_text',

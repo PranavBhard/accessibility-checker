@@ -518,4 +518,12 @@ return [
 		'viewable'  => false,
 		'fixes'     => [ MetaViewportScalableFix::get_slug() ],
 	],
+	[
+		'title'     => esc_html__( 'Naked Link', 'accessibility-checker' ),
+		'info_url'  => 'https://a11ychecker.com/help', // TODO: Update with correct help URL
+		'slug'      => 'link_naked',
+		'rule_type' => 'warning',
+		'summary'   => esc_html__( 'A Naked Link warning appears when a hyperlink displays the raw URL as its text content instead of descriptive text. For example, "https://example.com" instead of "Visit our website". Screen reader users benefit from descriptive link text that clearly indicates where the link will take them. To fix this warning, replace the URL text with meaningful text that describes the link destination or purpose.', 'accessibility-checker' ),
+		'ruleset'   => 'js',
+	],
 ];

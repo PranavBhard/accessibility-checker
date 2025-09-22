@@ -67,6 +67,8 @@ import hasSubheadingsIfLongContent from '../checks/has-subheadings-if-long-conte
 import imageAnimated from '../rules/img-animated';
 import imageAnimatedCheck from '../checks/img-animated-check';
 import alwaysFail from '../checks/always-fail';
+import nakedLink from '../rules/naked-link';
+import linkIsNaked from '../checks/link-is-naked';
 
 // Define all the custom rules to be used.
 export const rulesArray = [
@@ -104,6 +106,7 @@ export const rulesArray = [
 	imageAnimated,
 	ariaHiddenValidation,
 	ariaBrokenReference,
+	nakedLink,
 ];
 
 // Define all the custom checks to be used.
@@ -148,6 +151,7 @@ export const checksArray = [
 	ariaLabelNotFoundCheck,
 	ariaDescribedByNotFoundCheck,
 	ariaOwnsNotFoundCheck,
+	linkIsNaked,
 ];
 
 // Define the standard axe core rules to be used.
